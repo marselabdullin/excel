@@ -1,0 +1,29 @@
+{
+  "name": "excel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marselabdullin/excel.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Marsel Abdullin <abdmars@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marselabdullin/excel/issues"
+  },
+  "homepage": "https://github.com/marselabdullin/excel#readme",
+  "private": true,
+  "devDependencies": {
+    "webpack": "^5.12.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
