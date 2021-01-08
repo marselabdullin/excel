@@ -23,6 +23,10 @@
   "homepage": "https://github.com/marselabdullin/excel#readme",
   "private": true,
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.3",
     "webpack": "^5.12.1",
     "webpack-cli": "^4.3.1"
   }
