@@ -7,7 +7,7 @@
   },
   "rules": {
     "semi": "off",
-//    "linebreak-style": "off",
+    "linebreak-style": "off",
     "indent": ["error", 4],
     "require-jsdoc": "off"
   },
