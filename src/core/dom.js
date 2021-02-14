@@ -39,14 +39,55 @@ class Dom {
         return this.$el.getBoundingClientRect()
     }
 
+    id(parse) {
+        if (parse) {
+            const parsed = this.id().split(':')
+            return {
+                row: +parsed[0],
+                col: +parsed[1],
+            }
+        }
+        return this.data.id
+    }
+
+    find(selector) {
+        return $(this.$el.querySelector(selector))
+    }
+
     findAll(selector) {
         return this.$el.querySelectorAll(selector)
+    }
+
+    focus() {
+        this.$el.focus()
+        return this
     }
 
     css(styles = {}) {
         Object.keys(styles).forEach((key) => {
             this.$el.style[key] = styles[key]
         })
+    }
+
+    addClass(className) {
+        this.$el.classList.add(className)
+        return this
+    }
+
+    removeClass(className) {
+        this.$el.classList.remove(className)
+        return this
+    }
+
+    text(text) {
+        if (typeof text === 'string') {
+            this.$el.textContent = text
+            return this
+        }
+        if (this.$el.tagName === 'INPUT') {
+            return this.$el.value.trim()
+        }
+        return this.$el.textContent.trim()
     }
 
     clear() {
