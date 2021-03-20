@@ -26,6 +26,7 @@
     background: #f8f9fa;
     border-top: none;
     position: relative;
+    @include unselectable;
   }
 
   .row-data {
@@ -44,6 +45,7 @@
     border-left: 0;
     height: 100%;
     position: relative;
+    @include unselectable;
   }
 
   .cell {
